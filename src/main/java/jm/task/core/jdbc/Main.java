@@ -1,15 +1,23 @@
 package jm.task.core.jdbc;
 
 
+import jm.task.core.jdbc.dao.UserDaoHibernateImpl;
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.service.UserService;
 import jm.task.core.jdbc.service.UserServiceImpl;
+import jm.task.core.jdbc.util.Util;
 
 
 public class Main {
     public static void main(String[] args) {
+
+
+
+
+
         UserService userService = new UserServiceImpl();
         User user = new User("Pier", "Narcisse", (byte) 33);
+
         User user1 = new User("Kent", "Ment", (byte) 2);
         User user2 = new User("Rick", "Sanchez", (byte) 69);
         User user3 = new User("Ivan", "Ivanov", (byte) 22);
